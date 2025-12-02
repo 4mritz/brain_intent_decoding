@@ -18,3 +18,17 @@ Dataset: PhysioNet EEG Motor Movement/Imagery (subject 1, runs 6 and 10).
 6. Evaluate accuracy and visualize CSP patterns.
 
 Both models currently achieve 100% test accuracy on subject 1.
+
+## Notebook
+
+The full end-to-end pipeline is implemented in:
+
+`notebooks/download_physionet.ipynb`
+
+This notebook includes:
+- Downloading PhysioNet EEG data
+- Epoch extraction (left vs right motor imagery)
+- Preprocessing (8–30 Hz bandpass, standardization)
+- Classical ML pipeline (CSP + LDA)
+- Deep Learning pipeline (Simple EEGNet)
+- Saving metrics and figures
